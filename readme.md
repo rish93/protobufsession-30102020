@@ -26,3 +26,12 @@ POST
         }
     ]
 }
+
+
+
+Command to compile proto for Java:
+protoc --java_out=src/main/java  src/main/resources/guest.proto
+
+javascript proto
+protoc --js_out=import_style=commonjs,binary:build/gen guest.proto
+
