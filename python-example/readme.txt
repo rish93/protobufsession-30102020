@@ -1,0 +1,11 @@
+Windows PC:
+- install protobuf https://github.com/protocolbuffers/protobuf/releases
+- add D:\protoc-3.13.0-win32\bin to bin path to 
+- run protoc.exe  
+- read documenation https://developers.google.com/protocol-buffers/
+- download example https://github.com/protocolbuffers/protobuf
+- protoc.exe addressbook.proto --python_out=. to generate python class addressbook_pb2.py
+- view result addressbook_pb2.py
+- download addressbook.data https://github.com/corvino/protobuf-examples/blob/master/addressbook.data
+- python list_people.py addressbook.data
+- view addressbook
