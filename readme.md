@@ -1,6 +1,8 @@
 **PROTOBUF SESSION:** 
 30102020
 
+Mac brew=> brew install protobuf
+
 Protobuf is short for protocol buffers, which are language- and platform-neutral mechanisms for serializing structured data
 
 You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages.

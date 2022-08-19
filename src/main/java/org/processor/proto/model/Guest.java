@@ -11,7 +11,7 @@ import lombok.*;
     Guest(){
 
     }
-    String name;
+        String name;
         Integer id;
         String email;
         PhoneNumber []phoneNumbers;

@@ -1,5 +1,3 @@
-import org.processor.proto.model.GuestProtos;
-
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

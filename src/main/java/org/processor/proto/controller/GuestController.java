@@ -21,7 +21,7 @@ class GuestController{
     private GuestRepository guestRepository;
 
 
-    @RequestMapping(value = "/customers/proto/{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/customers/proto/{id}",method = RequestMethod.GET, produces = "application/x-protobuf")
     private GuestProtos.Guest getGuestProto(@PathVariable  Integer id){
         GuestProtos.Guest guest= this.guestRepository.findById(id);
         return guest;
@@ -69,7 +69,7 @@ class GuestController{
     }
 
     @RequestMapping(value = "/customers/proto/{id}",method = RequestMethod.POST)
-    private GuestProtos.Guest serializeGuestProto(@PathVariable  Integer id) throws IOException {
+    private GuestProtos.Guest serializeGuestProto(@PathVariable  Integer id, GuestProtos.Guest inputProtoGuest) throws IOException {
         GuestProtos.Guest guest=this.guestRepository.findById(id);
         long startTime = System.currentTimeMillis();
         FileOutputStream fos = new FileOutputStream("src/main/resources/serializedTestProto"+new Date().getSeconds());
